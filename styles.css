@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100% !important;
+  min-height: 100vh;
+  background-color: #eeecee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  height: 100% !important;
+
+  width: 30vw !important;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.background,
+#background {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  position: relative;
+}
+.heading {
+  position: absolute;
+  top: 2%;
+  left: 10%;
+}
+.btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.action-btn {
+  margin: 3% 10%;
+  background-color: white;
+  border: none;
+  padding: 2%;
+  border-radius: 5px;
+  height: 50px;
+}
+.ears,
+.hair,
+.neck,
+.nose,
+.eyes,
+.mouth,
+.leg,
+.acce {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  height: 100% !important;
+}
+.ears {
+  height: 80%;
+
+  background-color: transparent;
+}
+.hair {
+  height: 80%;
+
+  background-color: transparent;
+  z-index: 1;
+}
+.neck {
+  height: 80%;
+
+  background-color: transparent;
+}
+.nose {
+  height: 80%;
+
+  background-color: transparent;
+}
+.eyes {
+  height: 80%;
+
+  background-color: transparent;
+  z-index: 2;
+}
+.mouth {
+  height: 80%;
+
+  background-color: transparent;
+}
+.leg {
+  height: 80%;
+
+  background-color: transparent;
+}
+.acce {
+  height: 80%;
+
+  background-color: transparent;
+  z-index: 2;
+}
+.modifications {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.parts,
+.types {
+  background-color: #eeecee;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.btn {
+  width: fit-content;
+  display: flex;
+  padding: 2%;
+  border: 1px solid #23509c;
+  background: transparent;
+  border-radius: 15px;
+  color: #23509c;
+  font-weight: medium;
+  font-size: larger;
+  transition: ease-out 0.4s;
+  margin: 5px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #23509c;
+  color: #eeecee;
+}
+.modifications {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .heading {
+    position: relative;
+    top: 10px;
+    left: 0;
+  }
+  .image-container {
+    height: 45vh !important;
+    width: 90vw !important;
+    display: flex;
+    position: relative;
+    margin: 10%;
+  }
+
+  .background {
+    position: relative;
+  }
+  .modifications {
+    width: 100%;
+  }
+  .ears,
+  .hair,
+  .neck,
+  .nose,
+  .eyes,
+  .mouth,
+  .leg,
+  .acce {
+    position: absolute;
+    height: 80% !important;
+  }
+}
