@@ -15,4 +15,64 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">ALPACA GENERATOR</h1>
+
+      <div class="image-container" id="imageContainer">
+        <div class="background">
+          <img id="background" src="/alpaca/backgrounds/blue70.png" alt="" />
+          <div class="ears">
+            <img
+              id="ears"
+              src="/alpaca/ears/tilt-backward.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="hair">
+            <img id="hair" src="/alpaca/hair/bang.png" alt="" srcset="" />
+          </div>
+          <div class="neck">
+            <img id="neck" src="/alpaca/neck/default.png" alt="" srcset="" />
+          </div>
+          <div class="nose">
+            <img src="/alpaca/nose.png" alt="" srcset="" />
+          </div>
+          <div class="eyes">
+            <img id="eyes" src="/alpaca/eyes/default.png" alt="" srcset="" />
+          </div>
+          <div class="mouth">
+            <img id="mouth" src="/alpaca/mouth/eating.png" alt="" srcset="" />
+          </div>
+          <div class="leg">
+            <img id="leg" src="/alpaca/leg/bubble-tea.png" alt="" srcset="" />
+          </div>
+          <div class="acce">
+            <img
+              id="acce"
+              src="/alpaca/accessories/headphone.png"
+              alt=""
+              srcset=""
+            />
+          </div>
+        </div>
+        <div class="btns">
+          <button class="action-btn" value="random">
+            <i class="fa-solid fa-shuffle"></i> Random
+          </button>
+          <button class="action-btn" value="download">
+            <i class="fa-solid fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+
+      <div class="modifications">
+        <h1>Parts</h1>
+        <div class="parts" id="parts"></div>
+        <h1>Options</h1>
+        <div class="types" id="types"></div>
+      </div>
+    </div>
+  </body>
 </html>
